@@ -1,134 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Febin C S | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background: url('background.jpg') center/cover no-repeat;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 700;
-    }
-    header p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    section {
-      max-width: 950px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      margin-top: 0;
-      font-size: 28px;
-      border-left: 5px solid #111;
-      padding-left: 10px;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      background: #fafafa;
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      transition: all 0.3s ease;
-    }
-    .project-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transform: translateY(-4px);
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-      background: #111;
-      color: #fff;
-    }
-    a {
-      color: #111;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Febin C S | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="fade-in">
+
+  <!-- HEADER / HERO SECTION -->
   <header>
-    <img src="your-image.jpg" alt="Febin C S" style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:20px;" />
-    <h1>Febin C S</h1>
-    <p>Electronics & Communication Engineer | Robotics Trainer | IoT & Embedded Developer</p>
+      <img src="profile.jpg" alt="Febin C S" />
+      <h1>Febin C S</h1>
+      <p>ECE Graduate | IoT & Embedded Developer | Robotics Trainer | Innovator</p>
   </header>
 
+  <!-- ABOUT SECTION -->
   <section>
-    <h2>About Me</h2>
-    <p>
-     I am a recent Electronics and Communication Engineering graduate with strong expertise in IoT systems,
-    embedded development, hardware troubleshooting, and robotics. I have led and delivered multiple applied
-    technology projects, including laser communication systems, IoT-based hydroponics monitoring, and interactive
-    hardware installations for educational workshops and tech events. My goal is to continuously innovate in
-    embedded systems, automation, and secure communication technologies while expanding my impact through
-    open source contributions and collaborative development.
-    </p>
+      <h2>About Me</h2>
+      <p>
+        I am an Electronics and Communication Engineering graduate with expertise in IoT systems, embedded technologies,
+        hardware troubleshooting, and robotics. I have led multiple applied engineering projects including laser communication
+        systems, IoT-based hydroponics monitoring, and interactive hardware systems for tech events. I focus on solving
+        real-world problems through innovative embedded solutions.
+      </p>
   </section>
 
+  <!-- PROJECTS SECTION -->
   <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>IoT Systems (ESP32, Arduino, MQTT, Blynk)</li>
-      <li>PCB Design & Hardware Troubleshooting</li>
-      <li>Python & C Programming</li>
-      <li>Robotics Training & STEM Education</li>
-      <li>Laser Communication Systems</li>
-    </ul>
+      <h2>Projects</h2>
+
+      <div class="projects">
+          <div class="project-card">
+              <h3>Laser Communication System</h3>
+              <p>Secure short‑range data and audio transmission using Arduino Nano, solar receiver, and amplifier circuits.</p>
+          </div>
+
+          <div class="project-card">
+              <h3>HydroGreens (IoT Hydroponics)</h3>
+              <p>ESP32‑based IoT monitoring system with sensors for TDS, humidity, water level, and gas detection.</p>
+          </div>
+
+          <div class="project-card">
+              <h3>Laser Game Interactive System</h3>
+              <p>Event‑based interactive laser hardware for college tech fest, implemented across multiple institutions.</p>
+          </div>
+
+          <div class="project-card">
+              <h3>Robotics Workshop Trainer</h3>
+              <p>Designed sessions and hardware kits to train students in Arduino, sensors, and robotics fundamentals.</p>
+          </div>
+      </div>
   </section>
 
+  <!-- CONTACT SECTION -->
   <section>
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>LasE Wave – Laser Communication System</h3>
-        <p>Short-range text and audio communication using Arduino Nano, laser diode, and solar cell receiver.</p>
-      </div>
-      <div class="project-card">
-        <h3>HydroGreens – IoT Hydroponics</h3>
-        <p>ESP32-powered hydroponics monitoring system with sensors and Blynk IoT dashboard.</p>
-      </div>
-      <div class="project-card">
-        <h3>Laser Game – College Tech Fest</h3>
-        <p>Interactive laser-based gaming system implemented across multiple engineering colleges.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: febinsibincu@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/febinsibin67/" target="_blank">linkedin.com/in/febin-c-s</a></p>
-    <p>GitHub: <a href="#" target="_blank">your-github-link</a></p>
+      <h2>Contact</h2>
+      <p>Email: febinsibincu@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/febinsibin67/" target="_blank">linkedin.com/in/febinsibin67</a></p>
+      <p>GitHub: <a href="https://github.com/" target="_blank">github.com/yourusername</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Febin C S. All Rights Reserved.</p>
+      © 2025 Febin C S | Portfolio Website
   </footer>
+
 </body>
 </html>
